@@ -1,0 +1,351 @@
+/* no funcciona !!
+@media (min-width: 600px) {
+    #page { grid-template-columns: 1fr }
+}
+@media screen and (max-width: 600px) {
+    #page {
+        grid-template-columns: 1fr;
+    }
+}
+ nooo funcciooona!!!
+@media (min-width: 900px) {
+    #page { grid-template-columns: 2fr}
+}*/
+/* not responsive(*/
+body {
+    font-family: Helvetica, serif;
+    margin: 0;
+    background-image: url("icon/backgroundcolor.jpg");
+    color: #1a0003;
+}
+.header {
+    position: sticky;
+    top: 0;
+    border-bottom: 5em solid white;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    padding: 20px;
+
+}
+
+.nav {
+    float: right;
+    margin: 0;
+
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0.5em;
+
+}
+
+.nav li  a:link, a:visited {
+           background-color: #ffffff;
+           color: #0f0039;
+           padding: 14px 25px;
+           text-align: center;
+           display: inline-block;
+           border-radius:5px 10px;
+
+       }
+
+.nav li >a:hover, a:active {
+    background-color: #00c4ff;
+}
+ .hidden {
+    display: none !important;
+}
+#page{
+    max-width: 1200px;
+    display: grid;
+    grid-gap: 7rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding: 3em 14em;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ .block {
+     justify-content: center;
+     align-content: center;
+     font-size: large;
+     text-align: center;
+     margin: auto;
+     border-radius: 15px 50px;
+     background-color: white;
+     width: 250px;
+     height: 200px;
+
+ }
+
+.block:hover{
+    background-color: #d0f8ff;
+}
+
+.cvImg{
+    height: 100px;
+    border-radius: 50%;
+    padding: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+ #allMembers{
+     border-radius: 15px 50px;
+     color: #000000;
+     font-size: larger;
+     font-family: "ZCOOL XiaoWei", serif;
+     background-color: #ffffff;
+     border: none;
+     width: 250px;
+     height: 150px;
+     padding: 2em;
+     margin: inherit;
+ }
+ #allMembers:active :hover{
+     background-color: #ffb900;
+ }
+#addNewMember{
+    border-radius: 15px 50px;
+    color: #000000;
+    font-size: larger;
+    font-family: "ZCOOL XiaoWei", serif;
+    background-color: #ffffff;
+    border: none;
+    width: 250px;
+    height: 150px;
+    padding: 2em;
+    margin: inherit;
+}
+#addNewMember:active :hover{
+    background-color: #ffb900;
+}
+
+/*.cvBody{
+    background-image: url("icon/cvbodyback.jpg");
+    width: 600px;
+    height: 800px;
+    margin:0 auto;
+
+}
+*/
+
+/* add new member */
+.newMember{
+    background: #fcfdff;
+    justify-content: center;
+    padding:15px;
+    max-width:600px;
+    width:100%;
+    margin: 15px auto;
+}
+#newMember h1{
+    margin:10px;
+    align-self:center;
+    color: #0099ff;
+    display: block;
+    font-size: 40px;
+
+}
+#newMember label{
+    font-size: 20px;
+    color: #ff8c00;
+}
+
+ /* contact us css, new member some points*/
+.contactForm {
+    justify-content:center;
+    padding: 10px;
+    max-width:500px;
+    width:100%;
+    margin:10px auto;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea,
+#contact button[type="submit"],
+    #newMember
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #5d5d5d;
+}
+
+#contact {
+    background: #fcfdff;
+    padding:25px;
+    margin:50px 0;
+}
+
+#contact h3 {
+    margin:10px;
+    align-self:center;
+    color: orange;
+    display: block;
+    font-size: 40px;
+
+}
+
+#contact h4 {
+    margin:10px 20px 20px 15px;
+    display:block;
+    font-size:16px;
+}
+
+
+#contact input[type="text"], #contact input[type="email"],
+#contact input[type="tel"], #contact textarea, #newMember input[type="text"] {
+    width:90%;
+    border:1px solid #CCC;
+    background:white;
+    margin: 10px;
+    padding:10px;
+
+}
+
+#contact textarea {
+    height:100px;
+    max-width:100%;
+}
+
+#contact button[type="submit"], .newMember button {
+    width:100%;
+    border:none;
+    background:#0CF;
+    color:white;
+    margin:0 0 5px;
+    padding:10px;
+    font-size:15px;
+}
+.newMember button:hover {
+    background:orange;
+}
+#contact button[type="submit"]:hover {
+    background:orange;
+}
+
+/* CV page css*/
+
+
+.cv{
+    justify-content:center;
+    padding: 10px;
+    max-width:600px;
+    width:100%;
+    margin:30px auto;
+    background-image: url("icon/cvbodyback.jpg");
+    height: 800px;
+
+}
+#deleteMember {
+    width: 30%;
+    border: none;
+    height: 5%;
+    margin: 25% 3% 0 0;
+    float: right;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #a5099b;
+
+}
+#deleteMember:hover{
+    color: #a5099b;
+    background: white;
+}
+
+.personalInfo{
+    margin: 30px;
+}
+
+.full-name {
+    color: white;
+    padding:5px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.first-name{
+    font-weight: 100;
+}
+.last-name{
+    font-weight: 500;
+}
+
+.cvImage {
+    border: white 2px solid;
+    float: left;
+    height: 150px;
+    border-radius: 60%;
+    margin: 10px;
+}
+/* personal info css*/
+.contactInfo {
+    padding:5px 20px 0;
+    margin-bottom: 20px;
+}
+
+.email , .emailInput,
+.phone, .phoneInput {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.email, .phone{
+    color: #575870;
+}
+.emailInput, .phoneInput{
+    color: #000224;
+}
+
+/*personal details css*/
+.details {
+    margin-top: 80px;
+}
+
+.section {
+    margin: 50px;
+}
+
+
+.sectionName {
+    letter-spacing: 3px;
+    color: #54AFE4;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+
+.left ,
+.right {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    text-align: right;
+    width: 39%;
+}
+
+.eduList, .expList, .skillList {
+    margin-bottom: 10px;
+}
+ .unordered{
+     padding-left: 0;
+     margin-block-start: 0;
+ }
+ .listItem{
+     list-style-type: none;
+ }

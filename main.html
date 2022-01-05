@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curiculum Vitae</title>
+    <link rel = "icon" href =
+            "icon/picsarticon.jpg" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script type = "module" src="scripts/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+<body>
+<header class="header">
+    <div class="logo">
+        <a href="https://picsart.com/es" target="_blank"><img
+                src="https://cdn140.picsart.com/28410169050081638995.svg"
+                alt="picsart"> </a>
+    </div>
+        <ul class="nav">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="https://picsart.com/jobs" target="_blank">Jobs</a></li>
+            <li><a href="contact.html" >Contact</a></li>
+        </ul>
+</header>
+<div class="total">
+ <div id="page">
+
+       <button id="allMembers">Open all CVs</button>
+     <button id="addNewMember"><a href="#newMember"> Add new member </a> </button>
+</div>
+
+
+    <div class="cv hidden">
+        <div class="personalInfo">
+           <div class="cvImageDiv">
+                <img class="cvImage"
+                     src="icon/cv.png"
+                     alt="" >
+            </div>
+            <div class="full-name">
+                <span class="first-name"></span>
+                <span class="last-name"></span>
+            </div>
+
+            <div class="contactInfo">
+                <span class="email">E-mail</span>
+                <a class="emailInput" href=""> </a>
+                <br>
+                <span class="phone">Phone</span>
+                <a class="phoneInput" href=""></a>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="sectionName">EDUCATION</div>
+                <div class="eduList">
+                        <div class="left">
+                            <div class="eduName"> </div>
+                            <div class="addr"></div>
+                            <div class="eduDuration"></div>
+                        </div>
+                        <div class="right">
+                            <div class="facName"> </div> <!-- no tengo ganas de escribir para cada uno,, dps -->
+                        </div>
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="sectionName">EXPERIENCE</div>
+                <div class="expList">
+                        <div class="left">
+                            <div class="expName"></div>
+                            <div class="expPlace"></div>
+                            <div class="expDuration"></div>
+                        </div>
+                        <div class="right">
+                            <div class="profName"></div>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="section">
+                <div class="sectionName">TRAININGS</div>
+                <div class="skillList">
+                        <div class="left">
+                           <ul class="unordered">
+                               <li class="listItem"></li> <!-- no temrine -->
+                           </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <button id="deleteMember"> Delete member </button>
+    </div>
+    <div class="newMember hidden">
+            <form id="newMember" action="">
+                <h1>Add your information</h1>
+                <label> Name </label>
+                    <input placeholder="Your name" type="text" name="firstName">
+                <label> Surname </label>
+                <input placeholder="Your Surname" type="text" name="lastName">
+                <label> E-mail </label>
+                <input placeholder="Your e-mail" type="text" name="phone">
+                <label> Phone </label>
+                <input placeholder="Your phone number" type="text" name="email">
+                <label> Education </label>
+                <input placeholder="Your education" type="text" name="education">
+                <label> Experience </label>
+                <input placeholder="Your experience" type="text" name="experience">
+                <label> Trainings </label>
+                <input placeholder="Your trainings" type="text" name="trainings">
+
+            </form>
+            <button class = "submitButton" name="submit" type="submit"> Submit </button>
+
+        </div>
+    </div>
+</body>
+</html>
